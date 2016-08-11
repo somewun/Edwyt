@@ -1,0 +1,13 @@
+CHANGE LOG
+
+
+
++++ VERSION 0.1.0 - 10/08/2016 +++
+
+CHANGES
+
+First release of the program, so no changes to report.
+
+KNOWN BUGS
+
+Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
