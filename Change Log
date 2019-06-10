@@ -11,3 +11,23 @@ First release of the program, so no changes to report.
 KNOWN BUGS
 
 Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
+
+
++++ Version 0.2 - 10/06/2019 +++
+
+CHANGES
+
+New document menu option - deletes contents and all unsaved changes will currently be lost.
+
+The saveas function variable renamed (to text2saveas) for extra clarity.
+
+The text will now wrap around at the end of the last word that fits and not the charactor.
+
+Text box will now scale with the root window.
+
+Minor GUI improvements.
+
+KNOWN BUGS
+
+Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
+
