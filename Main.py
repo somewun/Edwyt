@@ -4,15 +4,11 @@ from tkinter.filedialog import *
 from tkinter.messagebox import *
 from tkinter.scrolledtext import *
 
-def saveas():
+def save():
     #showinfo("Save as", "This will be a save as function")
     name = asksaveasfile(mode='w', defaultextension=".txt")
-    text2save = text.get(1.0, END)
-    name.write(text2save)
-    name.close()
-
-def save():
-    showinfo("Save", "This will be a save function")
+    text2saveas = text.get(1.0, END)
+    name.write(text2saveas)
 
 def open():
     #showinfo("Open", "This will be an open function.")
@@ -26,8 +22,8 @@ def help():
 
 def license():
     showinfo("License",
-             """Edwyt, a simple lightweight text editor. Version 0.1.0.
-                Copyright (C) 2016  Somewun
+             """Edwyt, a simple lightweight text editor. Version 0.2
+                Copyright (C) 2019  Somewun
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -50,23 +46,22 @@ root.minsize(200,100)
 #app = interface.gui(root)
 
 frame = Frame(root)
-frame.pack()
+frame.pack(side=LEFT, fill=BOTH, expand = YES)
 
 menu = Menu(root)
 root.config(menu=menu)
 
 filemenu = Menu(menu)
 menu.add_cascade(label="File", menu=filemenu)
-# filemenu.add_command(label="New", command=NewFile)
+filemenu.add_command(label="New", command=NewFile)
 filemenu.add_command(label="Open...", command=open)
 filemenu.add_command(label="Save...", command=save)
-filemenu.add_command(label="Save as...", command=saveas)
 filemenu.add_separator()
 filemenu.add_command(label="Exit", command=root.quit)
 
 helpmenu = Menu(menu)
-menu.add_cascade(label="Help", menu=helpmenu)
-helpmenu.add_command(label="About...", command=help)
+menu.add_cascade(label="About", menu=helpmenu)
+helpmenu.add_command(label="About", command=help)
 helpmenu.add_command(label="license", command=license)
 
 text = ScrolledText(
@@ -75,7 +70,7 @@ text = ScrolledText(
             fg="black",
             font="verdana 10"
             )
-text.pack(side=BOTTOM)
+text.pack(side=LEFT, fill=BOTH, expand = YES)
 
 root.mainloop()
 
