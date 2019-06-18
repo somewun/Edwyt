@@ -9,7 +9,7 @@ To do List:
 1) I intend to make this program Dyslexia Friendly by default
 2) Edit the save function so that it is not nesecary to save as every time.
 2) Edit the help dialog box to give some help.
-3) Make sure it doesn't overwirte an already open file when opening another.
+3) Make sure it doesn't overwirte an already open file when opening another. (Fixed with 0.2.1 update)
 4) Remove the known bugs from the program (see change log)
 
 Somewun
