@@ -4,25 +4,35 @@ from tkinter.filedialog import *
 from tkinter.messagebox import *
 from tkinter.scrolledtext import *
 
+def new():
+    
+    result = askyesno("New File","Do you want to open a new file, all unsaved work will be lost.")
+    if result == True:
+        text.delete(1.0, END)
+    else:
+        return
+
 def save():
-    #showinfo("Save as", "This will be a save as function")
+
     name = asksaveasfile(mode='w', defaultextension=".txt")
     text2saveas = text.get(1.0, END)
     name.write(text2saveas)
 
 def open():
-    #showinfo("Open", "This will be an open function.")
+    
     name = askopenfile(defaultextension=".txt")
     text2open = text.insert(1.0, name.read())
     text.write(text2open)
     name.close()
 
 def help():
+    
     showinfo("Help", "This is going to be a help list.")
 
 def license():
+    
     showinfo("License",
-             """Edwyt, a simple lightweight text editor. Version 0.2
+             """Edwyt, a simple lightweight text editor. Version 0.2.1
                 Copyright (C) 2019  Somewun
 
     This program is free software: you can redistribute it and/or modify
@@ -41,9 +51,6 @@ def license():
 root = Tk()
 root.title("Edwyt")
 root.minsize(200,100)
-#root.iconbitmap(default="Edwyt Logo.png")
-
-#app = interface.gui(root)
 
 frame = Frame(root)
 frame.pack(side=LEFT, fill=BOTH, expand = YES)
@@ -68,7 +75,8 @@ text = ScrolledText(
             frame, width=50, height=25,
             bg="light blue",
             fg="black",
-            font="verdana 10"
+            font=("Comic Sans MS", 12),
+            wrap=WORD
             )
 text.pack(side=LEFT, fill=BOTH, expand = YES)
 
