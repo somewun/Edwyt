@@ -60,7 +60,7 @@ root.config(menu=menu)
 
 filemenu = Menu(menu)
 menu.add_cascade(label="File", menu=filemenu)
-filemenu.add_command(label="New", command=NewFile)
+filemenu.add_command(label="New", command=new)
 filemenu.add_command(label="Open...", command=open)
 filemenu.add_command(label="Save...", command=save)
 filemenu.add_separator()
