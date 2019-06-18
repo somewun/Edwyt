@@ -31,3 +31,17 @@ KNOWN BUGS
 
 Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
 
+
++++ Version 0.2.1 - 18/06/2019 +++
+
+CHANGES
+
+Put in a warning for creating a new file, "all unsaved work will be lost" message. 
+
+About menu naming has been made clearer.
+
+Default font changes to Comic Sans size 12 (Dyslexia Friendly)
+
+KNOWN BUGS
+
+Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
