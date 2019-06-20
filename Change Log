@@ -1,12 +1,27 @@
 CHANGE LOG
 
-
-
-+++ VERSION 0.1.0 - 10/08/2016 +++
++++ VERSION 0.2.2 - 20/06/2019 +++
 
 CHANGES
 
-First release of the program, so no changes to report.
+Put in a warning for opening a new file, "all unsaved work will be lost" message. 
+
+Default background changed to LightGoldenrod1
+
+KNOWN BUGS
+
+Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
+
+
++++ Version 0.2.1 - 18/06/2019 +++
+
+CHANGES
+
+Put in a warning for creating a new file, "all unsaved work will be lost" message. 
+
+About menu naming has been made clearer.
+
+Default font changes to Comic Sans size 12 (Dyslexia Friendly)
 
 KNOWN BUGS
 
@@ -32,16 +47,14 @@ KNOWN BUGS
 Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
 
 
-+++ Version 0.2.1 - 18/06/2019 +++
++++ VERSION 0.1.0 - 10/08/2016 +++
 
 CHANGES
 
-Put in a warning for creating a new file, "all unsaved work will be lost" message. 
-
-About menu naming has been made clearer.
-
-Default font changes to Comic Sans size 12 (Dyslexia Friendly)
+First release of the program, so no changes to report.
 
 KNOWN BUGS
 
 Some unusual behaviour (least I don't know why it does it) with reports of 'ScrolledText' object has no attribute 'write' as it displays the text in the text area when open function is run.
+
+
