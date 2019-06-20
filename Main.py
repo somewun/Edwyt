@@ -77,7 +77,7 @@ helpmenu.add_command(label="license", command=license)
 
 text = ScrolledText(
             frame, width=50, height=25,
-            bg="Goldenrod1",
+            bg="LightGoldenrod1",
             fg="black",
             font=("Comic Sans MS", 12),
             wrap=WORD
