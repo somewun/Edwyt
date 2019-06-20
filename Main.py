@@ -21,9 +21,13 @@ def save():
 def open():
     
     name = askopenfile(defaultextension=".txt")
-    text2open = text.insert(1.0, name.read())
-    text.write(text2open)
-    name.close()
+    result = askyesno("Open File","Do you want to open a new file, all unsaved work will be lost.")
+    if result == True:
+        text.delete(1.0, END)
+        text2open = text.insert(1.0, name.read())
+        text.write(text2open)
+    else:
+        return
 
 def help():
     
@@ -32,7 +36,7 @@ def help():
 def license():
     
     showinfo("License",
-             """Edwyt, a simple lightweight text editor. Version 0.2.1
+             """Edwyt, a simple lightweight text editor. Version 0.2.2
                 Copyright (C) 2019  Somewun
 
     This program is free software: you can redistribute it and/or modify
@@ -73,7 +77,7 @@ helpmenu.add_command(label="license", command=license)
 
 text = ScrolledText(
             frame, width=50, height=25,
-            bg="light blue",
+            bg="Goldenrod1",
             fg="black",
             font=("Comic Sans MS", 12),
             wrap=WORD
