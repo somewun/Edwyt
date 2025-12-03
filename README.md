@@ -2,7 +2,7 @@
 
 A simple Dyslexia friendly lightweight text editor for learning about GUI and Python. Curently written in Python 3 with TKinter.
 
-I am hoping to build this from scrach over time, ideas and help would be well recieved.
+I am hoping to build this from scratch over time, ideas and help would be well recieved.
 
 To do List:
 
